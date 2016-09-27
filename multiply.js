@@ -1,10 +1,10 @@
 // EXO 3 :
 
-function multiply(x,y) {
-
-var x = process.argv[2];
-var y = process.argv[3];
+function multiply(x, y) {
  console.log(x * y);
 }
 
-multiply();
+var param1 = process.argv[2];
+var param2 = process.argv[3];
+
+multiply(param1, param2);
