@@ -19,6 +19,10 @@ function multiply(a, b) {
 	return a * b;
 }
 
+function divide(a, b) {
+	return a / b;
+}
+
 function calc () {
 var operation = process.argv[2]
 
@@ -42,8 +46,11 @@ var operation = process.argv[2]
 	}	else if (operation === 'substract') {
 		console.log(substract(a, b));
 
-	} else {
+	}	else if (operation === 'multiply') {
 		console.log(multiply(a, b));
+
+	} else {
+		console.log(divide(a, b));
 	}
 }
 
